@@ -1,0 +1,30 @@
+OPEN WEBUI LAUNCHER FOR LM STUDIO
+================================
+
+Creato da gabrieleviola.it - https://www.gabrieleviola.it/
+Gli script sono MIT (LICENSE). Open WebUI ha una licenza separata,
+con condizioni sul branding: README.md e THIRD_PARTY.md.
+
+REQUISITI
+Windows 10/11, WinGet, LM Studio con un modello READY e server RUNNING
+su porta 1234, Require Authentication OFF. Internet al primo avvio.
+
+AVVIO
+1. Estrai tutti i file in una cartella.
+2. Apri LM Studio e avvia il modello e il Local Server.
+3. Doppio clic su AVVIA_OPEN_WEBUI.cmd.
+4. Si apre una seconda finestra: mantienila aperta durante l'uso.
+5. Da PC http://localhost:3000
+6. Da telefono http://IP_DEL_PC:3000 (stessa LAN, porta TCP 3000).
+
+COSA VIENE INSTALLATO
+Se manca, uv tramite WinGet; tramite uvx viene avviato Open WebUI.
+I dati restano in %LOCALAPPDATA%\LMStudio-OpenWebUI-ChatLAN\data
+La directory conserva anche la cronologia di un'installazione precedente.
+
+SICUREZZA
+Default WEBUI_AUTH=False: usare solo su rete privata fidata,
+mai pubblicare la porta 3000 su Internet. Per classi con un server
+condiviso, attivare il login prima del primo avvio, come in README.md.
+
+Non richiede Docker Desktop o WSL. Non modifica le loro configurazioni.
